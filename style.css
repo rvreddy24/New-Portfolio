@@ -102,6 +102,58 @@ h2 {
     border-left: 4px solid #0073e6;
 }
 
+/* Button styling */
+.details-button {
+    background-color: #0073e6;
+    color: #fff;
+    border: none;
+    padding: 0.5rem 1.5rem;
+    cursor: pointer;
+    border-radius: 8px;
+    font-size: 1rem;
+    font-weight: bold;
+    display: inline-flex;
+    align-items: center;
+    gap: 0.5rem;
+    transition: background-color 0.3s ease, transform 0.2s ease, box-shadow 0.2s ease;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.2);
+    position: relative;
+    overflow: hidden;
+}
+
+/* Button hover effects */
+.details-button:hover {
+    background-color: #005bb5;
+    transform: scale(1.05);
+    box-shadow: 0 6px 12px rgba(0, 0, 0, 0.3);
+}
+
+.details-button:active {
+    transform: scale(0.95);
+    background-color: #004494;
+}
+
+/* Icon inside button */
+.details-button i {
+    font-size: 1rem;
+    transition: transform 0.3s ease;
+}
+
+/* Icon slide animation on hover */
+.details-button:hover i {
+    transform: translateX(5px);
+}
+
+/* Text slide-in animation */
+.details-button span {
+    display: inline-block;
+    transition: transform 0.3s ease;
+}
+
+.details-button:hover span {
+    transform: translateX(-3px);
+}
+
 /* Skills */
 .skills-grid {
     display: grid;
@@ -145,3 +197,4 @@ footer {
 footer p {
     opacity: 0.85;
 }
+

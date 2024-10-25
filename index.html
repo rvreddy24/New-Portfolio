@@ -35,18 +35,26 @@
         <h2>Projects</h2>
 
         <div class="project">
-            <h3>ESP32 BLE Project <i class="fas fa-microchip"></i></h3>
-            <p>Developed a BLE device on ESP32 to broadcast real-time temperature and humidity data, with a battery level simulation.</p>
-            <button onclick="showDetails('ble-project')" class="styled-button">
-                <span>More Details</span>
-                <i class="fas fa-chevron-right"></i>
-            </button>
-            <div id="ble-project" class="project-details">
-                <p><strong>Technologies:</strong> ESP32, BLE, Arduino IDE</p>
-                <p><strong>Skills Demonstrated:</strong> Embedded programming, BLE protocol, real-time data transmission, battery simulation.</p>
+                <h3>Basic Environmental Monitoring System <i class="fas fa-thermometer-half"></i></h3>
+                <p>Developed a real-time temperature and humidity monitoring system using ESP32 and DHT11, with LED indicators and a customizable user interface through a serial monitor.</p>
+                
+                <button onclick="showDetails('env-monitoring-system')" class="styled-button">
+                    <span>More Details</span> <i class="fas fa-chevron-right"></i>
+                </button>
+                
+                <div id="env-monitoring-system" class="project-details">
+                    <p><strong>Description:</strong> Monitors temperature and humidity in real-time and uses an LED to indicate levels based on custom thresholds. Users interact with the system to adjust thresholds and control monitoring status.</p>
+                    <p><strong>Components:</strong> ESP32 Microcontroller, DHT11 Sensor, Jumper Wires.</p>
+                    <p><strong>System Features:</strong></p>
+                    <ul>
+                        <li>Temperature and Humidity Monitoring: Reads data every 2 seconds and displays it on a serial monitor.</li>
+                        <li>LED Indicator: Visual LED indication for levels above or below set thresholds.</li>
+                        <li>User Interface: Allows start/stop commands and threshold adjustments via a serial monitor.</li>
+                    </ul>
+                    <p><strong>Technologies Used:</strong> ESP32, DHT11 Sensor, Serial Communication, C++.</p>
+                    <p><strong>Outcome:</strong> Real-time environment monitoring system with user-defined thresholds for interactive control and customizable alerts.</p>
+                </div>
             </div>
-        </div>
-
         <div class="project">
     <h3>Data Upload Using Bluetooth <i class="fab fa-bluetooth-b"></i></h3>
     <p>Implemented BLE communication on ESP32 to broadcast temperature, humidity, and battery level data for real-time mobile access.</p>

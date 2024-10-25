@@ -1,4 +1,4 @@
-/* Basic Reset */
+/* Reset and font styles */
 * {
     margin: 0;
     padding: 0;
@@ -6,79 +6,134 @@
 }
 
 body {
-    font-family: Arial, sans-serif;
-    line-height: 1.6;
+    font-family: 'Arial', sans-serif;
     color: #333;
+    background: #f0f4f8;
+    line-height: 1.6;
 }
 
 /* Header */
 header {
-    background-color: #333;
+    background: linear-gradient(135deg, #0073e6, #005bb5);
     color: #fff;
-    padding: 1rem;
+    padding: 2rem 1rem;
     text-align: center;
 }
 
-header nav a {
-    color: #fff;
-    margin: 0 1rem;
-    text-decoration: none;
-    font-weight: bold;
+.header-content h1 {
+    font-size: 2.5rem;
 }
 
-header nav a:hover {
-    color: #ccc;
+.header-content p {
+    font-size: 1.1rem;
+    opacity: 0.85;
+}
+
+nav a {
+    color: #fff;
+    margin: 0 0.5rem;
+    font-weight: bold;
+    text-decoration: none;
+    padding: 0.5rem 1rem;
+    transition: background 0.3s ease;
+}
+
+nav a:hover {
+    background: #005bb5;
+    border-radius: 5px;
 }
 
 /* Sections */
 section {
     padding: 2rem;
-    max-width: 800px;
+    max-width: 900px;
     margin: 2rem auto;
-    border-bottom: 1px solid #ddd;
+    background: #fff;
+    border-radius: 8px;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
 }
 
 h2 {
-    color: #444;
+    color: #005bb5;
     margin-bottom: 1rem;
+    font-size: 1.8rem;
 }
 
 /* Projects */
 .project {
-    margin-bottom: 2rem;
+    margin-bottom: 1.5rem;
 }
 
 .project h3 {
-    font-size: 1.2rem;
+    font-size: 1.3rem;
     color: #0073e6;
+    display: flex;
+    align-items: center;
 }
 
 button {
-    background-color: #0073e6;
+    background: #0073e6;
     color: #fff;
     border: none;
     padding: 0.5rem 1rem;
-    margin-top: 0.5rem;
     cursor: pointer;
+    border-radius: 4px;
+    margin-top: 0.5rem;
+    transition: background 0.3s ease;
 }
 
 button:hover {
-    background-color: #005bb5;
+    background: #005bb5;
 }
 
 .project-details {
     display: none;
-    background-color: #f4f4f4;
+    background: #f0f8ff;
     padding: 1rem;
     margin-top: 0.5rem;
     border-left: 4px solid #0073e6;
 }
 
+/* Skills */
+.skills-grid {
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    gap: 1rem;
+    margin-top: 1rem;
+}
+
+.skills-grid div {
+    display: flex;
+    align-items: center;
+    gap: 0.5rem;
+    font-size: 1.1rem;
+}
+
+/* Resource Links */
+.resource-links a {
+    display: inline-flex;
+    align-items: center;
+    color: #0073e6;
+    text-decoration: none;
+    font-size: 1.2rem;
+    margin-right: 1rem;
+    transition: color 0.3s ease;
+}
+
+.resource-links a:hover {
+    color: #005bb5;
+}
+
 /* Footer */
 footer {
-    background-color: #333;
+    background: #333;
     color: #fff;
     text-align: center;
     padding: 1rem;
     margin-top: 2rem;
+    border-top: 4px solid #0073e6;
+}
+
+footer p {
+    opacity: 0.85;
 }

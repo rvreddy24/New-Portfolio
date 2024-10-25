@@ -1,190 +1,112 @@
-/* Reset and Font */
+/* Reset */
 * {
     margin: 0;
     padding: 0;
     box-sizing: border-box;
 }
 
+/* General Styles */
 body {
-    font-family: 'Arial', sans-serif;
+    font-family: Arial, sans-serif;
+    background-color: #f4f4f4;
     color: #333;
-    background: #f0f4f8;
     line-height: 1.6;
+    padding: 20px;
 }
 
 /* Header */
 header {
-    background: linear-gradient(135deg, #0073e6, #005bb5);
-    color: #fff;
-    padding: 2rem 1rem;
     text-align: center;
+    margin-bottom: 20px;
 }
 
-.header-content {
-    max-width: 800px;
-    margin: auto;
+header h1 {
+    font-size: 2.5em;
+    color: #333;
 }
 
-.profile-img {
-    width: 120px;
-    height: 120px;
-    border-radius: 50%;
-    margin-bottom: 1rem;
-    border: 3px solid #fff;
+header p {
+    font-size: 1.1em;
+    color: #555;
 }
 
-.header-content h1 {
-    font-size: 2.5rem;
-}
-
-.header-content p {
-    font-size: 1.1rem;
-    opacity: 0.85;
-}
-
-nav a {
-    color: #fff;
-    margin: 0 0.5rem;
-    font-weight: bold;
-    text-decoration: none;
-    padding: 0.5rem 1rem;
-    transition: background 0.3s ease;
-}
-
-nav a:hover {
-    background: #005bb5;
-    border-radius: 5px;
-}
-
-/* Sections */
-section {
-    padding: 2rem;
+/* Project Section */
+#projects {
+    width: 100%;
     max-width: 900px;
-    margin: 2rem auto;
+    margin: 0 auto;
+    padding: 20px;
     background: #fff;
     border-radius: 8px;
-    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+    box-shadow: 0px 4px 10px rgba(0, 0, 0, 0.1);
 }
 
-h2 {
-    color: #005bb5;
-    margin-bottom: 1rem;
-    font-size: 1.8rem;
+#projects h2 {
+    text-align: center;
+    color: #333;
+    margin-bottom: 20px;
 }
 
-/* Projects */
+/* Project Item */
 .project {
-    margin-bottom: 1.5rem;
+    margin-bottom: 20px;
+    padding: 15px;
+    border-bottom: 1px solid #ddd;
 }
 
 .project h3 {
-    font-size: 1.3rem;
-    color: #0073e6;
+    color: #007bff;
     display: flex;
     align-items: center;
+    font-size: 1.4em;
 }
 
-.project i {
-    margin-left: 0.5rem;
+.project h3 i {
+    margin-left: 10px;
+    color: #333;
 }
 
 .project p {
-    margin-top: 0.5rem;
-    font-size: 1rem;
-    color: #444;
+    margin: 10px 0;
+    color: #555;
 }
 
+/* Project Details */
 .project-details {
     display: none;
-    background: #f0f8ff;
-    padding: 1rem;
-    margin-top: 0.5rem;
-    border-left: 4px solid #0073e6;
+    margin-top: 10px;
+    padding: 10px;
+    background-color: #f9f9f9;
+    border: 1px solid #ddd;
+    border-radius: 5px;
 }
 
-/* Button styling */
+/* Styled Button */
 .styled-button {
-    background: linear-gradient(135deg, #0073e6, #00c6ff);
+    display: inline-block;
+    padding: 10px 20px;
+    font-size: 0.9em;
     color: #fff;
+    background-color: #007bff;
     border: none;
-    padding: 0.6rem 1.8rem;
+    border-radius: 5px;
     cursor: pointer;
-    border-radius: 12px;
-    font-size: 1rem;
-    font-weight: bold;
-    display: inline-flex;
-    align-items: center;
-    gap: 0.6rem;
-    transition: background 0.3s ease, transform 0.3s ease, box-shadow 0.2s ease;
-    box-shadow: 0 6px 10px rgba(0, 0, 0, 0.15);
-    position: relative;
-    overflow: hidden;
+    transition: background 0.3s;
 }
 
 .styled-button:hover {
-    background: linear-gradient(135deg, #005bb5, #0073e6);
-    transform: translateY(-3px);
-    box-shadow: 0 10px 15px rgba(0, 0, 0, 0.3);
+    background-color: #0056b3;
 }
 
 .styled-button i {
-    font-size: 1rem;
-    transition: transform 0.3s ease;
-}
-
-.styled-button:hover i {
-    transform: translateX(5px);
-}
-
-.styled-button span {
-    display: inline-block;
-    transition: transform 0.3s ease;
-}
-
-.styled-button:hover span {
-    transform: translateX(-2px);
-}
-
-/* Skills */
-.skills-grid {
-    display: grid;
-    grid-template-columns: 1fr 1fr;
-    gap: 1rem;
-    margin-top: 1rem;
-}
-
-.skills-grid div {
-    display: flex;
-    align-items: center;
-    gap: 0.5rem;
-    font-size: 1.1rem;
-}
-
-/* Resource Links */
-.resource-links a {
-    display: inline-flex;
-    align-items: center;
-    color: #0073e6;
-    text-decoration: none;
-    font-size: 1.2rem;
-    margin-right: 1rem;
-    transition: color 0.3s ease;
-}
-
-.resource-links a:hover {
-    color: #005bb5;
+    margin-left: 5px;
 }
 
 /* Footer */
 footer {
-    background: #333;
-    color: #fff;
     text-align: center;
-    padding: 1rem;
-    margin-top: 2rem;
-    border-top: 4px solid #0073e6;
-}
-
-footer p {
-    opacity: 0.85;
+    margin-top: 20px;
+    padding: 10px;
+    font-size: 0.9em;
+    color: #777;
 }

@@ -1,4 +1,3 @@
-/* Reset and Font */
 * {
     margin: 0;
     padding: 0;
@@ -12,7 +11,6 @@ body {
     line-height: 1.6;
 }
 
-/* Header */
 header {
     background: linear-gradient(135deg, #0073e6, #005bb5);
     color: #fff;
@@ -56,7 +54,6 @@ nav a:hover {
     border-radius: 5px;
 }
 
-/* Sections */
 section {
     padding: 2rem;
     max-width: 900px;
@@ -72,7 +69,6 @@ h2 {
     font-size: 1.8rem;
 }
 
-/* Projects */
 .project {
     margin-bottom: 1.5rem;
 }
@@ -102,7 +98,6 @@ h2 {
     border-left: 4px solid #0073e6;
 }
 
-/* Button styling */
 .details-button {
     background-color: #0073e6;
     color: #fff;
@@ -115,46 +110,14 @@ h2 {
     display: inline-flex;
     align-items: center;
     gap: 0.5rem;
-    transition: background-color 0.3s ease, transform 0.2s ease, box-shadow 0.2s ease;
-    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.2);
-    position: relative;
-    overflow: hidden;
+    transition: background-color 0.3s ease, transform 0.2s ease;
 }
 
-/* Button hover effects */
 .details-button:hover {
     background-color: #005bb5;
     transform: scale(1.05);
-    box-shadow: 0 6px 12px rgba(0, 0, 0, 0.3);
 }
 
-.details-button:active {
-    transform: scale(0.95);
-    background-color: #004494;
-}
-
-/* Icon inside button */
-.details-button i {
-    font-size: 1rem;
-    transition: transform 0.3s ease;
-}
-
-/* Icon slide animation on hover */
-.details-button:hover i {
-    transform: translateX(5px);
-}
-
-/* Text slide-in animation */
-.details-button span {
-    display: inline-block;
-    transition: transform 0.3s ease;
-}
-
-.details-button:hover span {
-    transform: translateX(-3px);
-}
-
-/* Skills */
 .skills-grid {
     display: grid;
     grid-template-columns: 1fr 1fr;
@@ -169,7 +132,6 @@ h2 {
     font-size: 1.1rem;
 }
 
-/* Resource Links */
 .resource-links a {
     display: inline-flex;
     align-items: center;
@@ -184,17 +146,10 @@ h2 {
     color: #005bb5;
 }
 
-/* Footer */
 footer {
     background: #333;
     color: #fff;
     text-align: center;
     padding: 1rem;
     margin-top: 2rem;
-    border-top: 4px solid #0073e6;
 }
-
-footer p {
-    opacity: 0.85;
-}
-

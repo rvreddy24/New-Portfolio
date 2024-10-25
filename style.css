@@ -1,4 +1,4 @@
-/* Basic Reset */
+/* Reset and Font */
 * {
     margin: 0;
     padding: 0;
@@ -84,19 +84,14 @@ h2 {
     align-items: center;
 }
 
-button {
-    background: #0073e6;
-    color: #fff;
-    border: none;
-    padding: 0.5rem 1rem;
-    cursor: pointer;
-    border-radius: 4px;
-    margin-top: 0.5rem;
-    transition: background 0.3s ease;
+.project i {
+    margin-left: 0.5rem;
 }
 
-button:hover {
-    background: #005bb5;
+.project p {
+    margin-top: 0.5rem;
+    font-size: 1rem;
+    color: #444;
 }
 
 .project-details {
@@ -150,5 +145,3 @@ footer {
 footer p {
     opacity: 0.85;
 }
-
-

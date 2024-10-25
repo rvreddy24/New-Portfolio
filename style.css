@@ -121,7 +121,6 @@ h2 {
     overflow: hidden;
 }
 
-/* Hover and active effects */
 .styled-button:hover {
     background: linear-gradient(135deg, #005bb5, #0073e6);
     transform: translateY(-3px); /* Lift on hover */
@@ -133,18 +132,15 @@ h2 {
     box-shadow: 0 4px 6px rgba(0, 0, 0, 0.2);
 }
 
-/* Icon styling */
 .styled-button i {
     font-size: 1rem;
     transition: transform 0.3s ease;
 }
 
-/* Icon slide animation on hover */
 .styled-button:hover i {
     transform: translateX(5px); /* Slide icon to the right */
 }
 
-/* Text slide-in animation */
 .styled-button span {
     display: inline-block;
     transition: transform 0.3s ease;

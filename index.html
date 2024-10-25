@@ -11,7 +11,7 @@
     <header>
         <div class="header-content">
             <img src="Images/profile.jpg" alt="Raj Varshith Reddy MalgiReddy" class="profile-img">
-            <h1>Raj Varshith Reddy MalgiReddy</h1>
+            <h1>Raj Varshith Reddy MalgiRReddy</h1>
             <p>Data Science Student | University of Missouri-Kansas City</p>
             <nav>
                 <a href="#about">About</a>
@@ -31,40 +31,29 @@
         <h2>Projects</h2>
 
         <div class="project">
-                <h3>Basic Environmental Monitoring System <i class="fas fa-thermometer-half"></i></h3>
-                <p>Developed a real-time temperature and humidity monitoring system using ESP32 and DHT11, with LED indicators and a customizable user interface through a serial monitor.</p>
-                
-                <button onclick="showDetails('env-monitoring-system')" class="styled-button">
-                    <span>More Details</span> <i class="fas fa-chevron-right"></i>
-                </button>
-                
-                <div id="env-monitoring-system" class="project-details">
-                    <p><strong>Description:</strong> Monitors temperature and humidity in real-time and uses an LED to indicate levels based on custom thresholds. Users interact with the system to adjust thresholds and control monitoring status.</p>
-                    <p><strong>Components:</strong> ESP32 Microcontroller, DHT11 Sensor, Jumper Wires.</p>
-                    <p><strong>System Features:</strong></p>
-                    <ul>
-                        <li>Temperature and Humidity Monitoring: Reads data every 2 seconds and displays it on a serial monitor.</li>
-                        <li>LED Indicator: Visual LED indication for levels above or below set thresholds.</li>
-                        <li>User Interface: Allows start/stop commands and threshold adjustments via a serial monitor.</li>
-                    </ul>
-                    <p><strong>Technologies Used:</strong> ESP32, DHT11 Sensor, Serial Communication, C++.</p>
-                    <p><strong>Outcome:</strong> Real-time environment monitoring system with user-defined thresholds for interactive control and customizable alerts.</p>
-                </div>
+            <h3>Basic Environmental Monitoring System <i class="fas fa-thermometer-half"></i></h3>
+            <p>Developed a real-time temperature and humidity monitoring system using ESP32 and DHT11, with LED indicators and a customizable user interface through a serial monitor.</p>
+            <button onclick="showDetails('env-monitoring-system')" class="details-button">
+                <span>More Details</span> <i class="fas fa-chevron-right"></i>
+            </button>
+            <div id="env-monitoring-system" class="project-details">
+                <p><strong>Description:</strong> Monitors temperature and humidity in real-time and uses an LED to indicate levels based on custom thresholds. Users interact with the system to adjust thresholds and control monitoring status.</p>
+                <p><strong>Components:</strong> ESP32 Microcontroller, DHT11 Sensor, Jumper Wires.</p>
+                <p><strong>Technologies Used:</strong> ESP32, DHT11 Sensor, Serial Communication, C++.</p>
             </div>
-        <div class="project">
-    <h3>Data Upload Using Bluetooth <i class="fab fa-bluetooth-b"></i></h3>
-    <p>Implemented BLE communication on ESP32 to broadcast temperature, humidity, and battery level data for real-time mobile access.</p>
-    <button onclick="showDetails('bluetooth-data-project')" class="styled-button">
-        <span>More Details</span>
-        <i class="fas fa-chevron-right"></i>
-    </button>
-    <div id="bluetooth-data-project" class="project-details">
-        <p><strong>Description:</strong> Reads temperature and humidity data from DHT11, then broadcasts via BLE with battery level simulation.</p>
-        <p><strong>Technologies Used:</strong> ESP32, BLE, DHT11 Sensor, BLE debugging app (nRF Connect).</p>
-        <p><strong>Outcome:</strong> Provides real-time sensor data and battery notifications over BLE to a mobile application.</p>
-    </div>
-</div>
+        </div>
 
+        <div class="project">
+            <h3>Data Upload Using Bluetooth <i class="fab fa-bluetooth-b"></i></h3>
+            <p>Implemented BLE communication on ESP32 to broadcast temperature, humidity, and battery level data for real-time mobile access.</p>
+            <button onclick="showDetails('bluetooth-data-project')" class="details-button">
+                <span>More Details</span> <i class="fas fa-chevron-right"></i>
+            </button>
+            <div id="bluetooth-data-project" class="project-details">
+                <p><strong>Description:</strong> Reads temperature and humidity data from DHT11, then broadcasts via BLE with battery level simulation.</p>
+                <p><strong>Technologies Used:</strong> ESP32, BLE, DHT11 Sensor, BLE debugging app (nRF Connect).</p>
+            </div>
+        </div>
         <div class="project">
             <h3>Cloud Data Upload Using WiFi <i class="fas fa-cloud-upload-alt"></i></h3>
             <p>Used ESP32 and Flask to transmit real-time sensor data over WiFi for centralized monitoring and display.</p>

@@ -94,6 +94,14 @@ h2 {
     color: #444;
 }
 
+.project-details {
+    display: none;
+    background: #f0f8ff;
+    padding: 1rem;
+    margin-top: 0.5rem;
+    border-left: 4px solid #0073e6;
+}
+
 /* Skills */
 .skills-grid {
     display: grid;

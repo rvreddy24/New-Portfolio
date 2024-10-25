@@ -103,22 +103,55 @@ h2 {
 }
 
 /* Button styling */
-.details-button {
-    background-color: #0073e6;
+.styled-button {
+    background: linear-gradient(135deg, #0073e6, #00c6ff); /* Gradient background */
     color: #fff;
     border: none;
-    padding: 0.5rem 1.5rem;
+    padding: 0.6rem 1.8rem;
     cursor: pointer;
-    border-radius: 8px;
+    border-radius: 12px;
     font-size: 1rem;
     font-weight: bold;
     display: inline-flex;
     align-items: center;
-    gap: 0.5rem;
-    transition: background-color 0.3s ease, transform 0.2s ease, box-shadow 0.2s ease;
-    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.2);
+    gap: 0.6rem;
+    transition: background 0.3s ease, transform 0.3s ease, box-shadow 0.2s ease;
+    box-shadow: 0 6px 10px rgba(0, 0, 0, 0.15); /* Soft shadow */
     position: relative;
     overflow: hidden;
+}
+
+/* Hover and active effects */
+.styled-button:hover {
+    background: linear-gradient(135deg, #005bb5, #0073e6);
+    transform: translateY(-3px); /* Lift on hover */
+    box-shadow: 0 10px 15px rgba(0, 0, 0, 0.3); /* Stronger shadow */
+}
+
+.styled-button:active {
+    transform: translateY(0); /* Press down effect */
+    box-shadow: 0 4px 6px rgba(0, 0, 0, 0.2);
+}
+
+/* Icon styling */
+.styled-button i {
+    font-size: 1rem;
+    transition: transform 0.3s ease;
+}
+
+/* Icon slide animation on hover */
+.styled-button:hover i {
+    transform: translateX(5px); /* Slide icon to the right */
+}
+
+/* Text slide-in animation */
+.styled-button span {
+    display: inline-block;
+    transition: transform 0.3s ease;
+}
+
+.styled-button:hover span {
+    transform: translateX(-2px); /* Subtle text movement */
 }
 
 /* Button hover effects */
